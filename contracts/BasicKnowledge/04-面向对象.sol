@@ -8,6 +8,7 @@ contract Demo1 {
 }
 
 contract Demo2 {
+    // virtual 修饰表示这个方法是虚拟化的，可以被继承
     function sayBye() public pure virtual returns(string memory) {
         return "Bye";
     }

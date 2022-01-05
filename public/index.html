@@ -1,0 +1,200 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+
+        <title>ETH WALLET</title>
+
+        <!-- 引入bootstrap和jQuery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- <script type="text/javascript" src="jquery.min.js"></script> -->
+
+        <script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+
+        <style type="text/css">
+
+        </style>
+    </head>
+    <body>
+        <div class="container" style="margin-top: 100px">
+            <div class="row">
+                <div class="col-sm">
+                    <input
+                        placeholder="password for add account "
+                        id="account_pwd"
+                        type="text"
+                        class="form-control"
+                        placeholder="Text input"
+                        style="height: 30px; width: 400px"
+                    />
+                </div>
+                <div class="col-sm">
+                    <button
+                        id="addAcount"
+                        type="button"
+                        class="btn btn-primary"
+                        style="height: 30px; width: 150px"
+                    >
+                        ADD ACCOUNT
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 10px">
+            <div class="row">
+                <div class="col-sm">
+                    <input
+                        placeholder="from account"
+                        id="account_from"
+                        type="text"
+                        class="form-control"
+                        placeholder="Text input"
+                        style="height: 30px; width: 400px"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 10px">
+            <div class="row">
+                <div class="col-sm">
+                    <input
+                        placeholder="to account"
+                        id="account_to"
+                        type="text"
+                        class="form-control"
+                        placeholder="Text input"
+                        style="height: 30px; width: 400px"
+                        required="required"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin-top: 10px">
+            <div class="row">
+                <div class="col-sm">
+                    <input
+                        placeholder="transfer ether (ETH)"
+                        id="transfer_amount"
+                        type="text"
+                        class="form-control"
+                        placeholder="Text input"
+                        style="height: 30px; width: 400px"
+                        required="required"
+                    />
+                
+                </div>
+                <div class="col-sm">
+                    <button
+                        id="transfer"
+                        type="button"
+                        class="btn btn-primary"
+                        style="height: 30px; width: 150px"
+                    >
+                        TRANSFER
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 显示所有账户 -->
+        <div class="container" style="margin-top: 20px">
+            <div class="row">
+                <div class="col">
+                    <h4>Account Address</h4>
+                </div>
+                <div class="col" >
+                    <h4>Balance</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="accounts_list">
+        </div>
+
+        
+
+        <script type="text/javascript">
+            var balance = 0;
+            //获取所有的账户
+            function getAccounts() {
+                $.get("http://localhost:8081/accounts", function (accounts) {
+                    // es6模板字符串
+                    var rows = "";
+                    for (var i = 0; i < accounts.length; i++) {
+                        rows += `<div class="row">
+                                <div class="col">
+                                    ${accounts[i]}
+                                </div>
+                                <div class="col" id="${accounts[i]}" >
+                                    
+                                </div>
+                            </div>`;
+                        getBalance(accounts[i]);
+                    }
+                    $("#accounts_list").html(rows);
+                });
+            }
+
+            // 获取账户余额
+            function getBalance(account) {
+                $.get(
+                    "http://localhost:8081/balance",
+                    { account: account },
+                    function (res) {
+                        console.log(
+                            "=======account=======" +
+                                account +
+                                "=======balance=======" +
+                                res
+                        );
+
+                        $("#" + account).html(res);
+                    }
+                );
+            }
+
+            getAccounts();
+
+            $("#addAcount").click(function () {
+                console.log("===add===");
+                var account_pwd = $("#account_pwd").val();
+                console.log("===account_pwd===" + account_pwd);
+                if (account_pwd != "") {
+                    $.get(
+                        "http://localhost:8081/add",
+                        { account_pwd: account_pwd },
+                        function (res) {
+                            getAccounts();
+                        }
+                    );
+                    $("#account_pwd").val("");
+                } else {
+                    alert("Please enter the password")
+                }
+            });
+
+            $("#transfer").click(function () {
+                console.log("===transfer===");
+                var account_from = $("#account_from").val();
+                var account_to = $("#account_to").val();
+                var transfer_amount = $("#transfer_amount").val();
+                
+                if (account_from != "" && account_to != "" && transfer_amount != "") {
+                    $.get("http://localhost:8081/transfer", 
+                        {from: account_from, to:account_to, amount: transfer_amount},
+                        function (res) {
+                            getAccounts();
+                        }
+                    );
+                    $("#account_from").val("");
+                    $("#transfer_amount").val("");
+                    $("#account_to").val("");
+                } else {
+                    alert("Please enter from and to account")
+                }
+            });
+        </script>
+    </body>
+</html>

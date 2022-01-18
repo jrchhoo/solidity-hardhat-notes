@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, "../public")));
 
 // 指定静态文件路径
 app.get("/", function (req, res) {
-    console.log("---begin---");
+    // console.log("---begin---");
     res.sendFile(__dirname + "/public/index.html");
 });
 
@@ -21,6 +21,7 @@ app.get("/accounts", function (req, res) {
             res.send(accounts);
         }
     });
+    
 });
 
 app.get("/balance", function (req, res) {
@@ -45,8 +46,14 @@ app.get("/transfer", function (req, res) {
     var from = req.query.from;
     var to = req.query.to;
     var amount = req.query.amount;
+    var pwd = req.query.pwd;
 
     if (web3.utils.isAddress(from) && web3.utils.isAddress(to)) {
+
+        if (pwd != "") {
+            web3.eth.personal.unlockAccount(from, pwd, 200).then(console.log('unlocked'));
+        }
+
         var message = {from: from, to:to, value:web3.utils.toWei(amount, 'ether')};
 
         web3.eth.sendTransaction(message, (err, result) => {

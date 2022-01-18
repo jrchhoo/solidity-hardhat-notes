@@ -95,7 +95,7 @@ contract MntToken is StandardToken {
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 contract MntToken1 is ERC20 {
-    constructor() ERC20("SimpleTokenTest", "MNT") {
+    constructor() ERC20("SimpleToken", "MNT") {
        _mint(msg.sender,100 * 10 ** decimals());
     }
 }

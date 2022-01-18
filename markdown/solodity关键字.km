@@ -1,0 +1,374 @@
+{
+    "root": {
+        "data": {
+            "id": "cgvx5eu7rig0",
+            "created": 1641200860554,
+            "text": "一些重要的关键字"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cgvx5f98j3c0",
+                    "created": 1641200861462,
+                    "text": "访问权限",
+                    "layout_mind_offset": {
+                        "x": -79,
+                        "y": 3
+                    },
+                    "layout_right_offset": {
+                        "x": 22,
+                        "y": 449
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cgvx5l96pcw0",
+                            "created": 1641200874520,
+                            "text": "public"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgvx5zm8cdc0",
+                                    "created": 1641200905784,
+                                    "text": "内部和外部都可以访问，可继承"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgvx5or0msw0",
+                            "created": 1641200882129,
+                            "text": "internal"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgvx6dy8n1s0",
+                                    "created": 1641200936985,
+                                    "text": "合约内部访问，外部不能访问，可被继承"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgvx5tqey2o0",
+                            "created": 1641200892976,
+                            "text": "private"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgvx6ys7nz40",
+                                    "created": 1641200982333,
+                                    "text": "合约内部访问，外部不能访问，不可被继承"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgvx5wa81140",
+                            "created": 1641200898527,
+                            "text": "external"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgvx7905cbk0",
+                                    "created": 1641201004581,
+                                    "text": "合约内部不能访问（但可以用this调用），外部正常访问，可被继承"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cgvxbtqs3mw0",
+                    "created": 1641201363183,
+                    "text": "构造函数",
+                    "layout_mind_offset": {
+                        "x": 4,
+                        "y": 49
+                    },
+                    "layout_right_offset": {
+                        "x": 3,
+                        "y": -129
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cgvxbwh5kfk0",
+                            "created": 1641201369131,
+                            "text": "contructor"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cgvx7s0rc9s0",
+                    "created": 1641201045976,
+                    "text": "函数修饰关键字其他",
+                    "layout_mind_offset": {
+                        "x": -32,
+                        "y": 61
+                    },
+                    "layout_right_offset": {
+                        "x": 22,
+                        "y": 377
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cgvx80dzfds0",
+                            "created": 1641201064190,
+                            "text": "pure"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgvx88r2hrk0",
+                                    "created": 1641201082396,
+                                    "text": "返回值为确定值而非变量时修饰函数"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgvx821ddpc0",
+                            "created": 1641201067781,
+                            "text": "view"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgvx8p7ho4w0",
+                                    "created": 1641201118217,
+                                    "text": "返回值为全局变量或属性时修饰函数"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgvx84ii9i80",
+                            "created": 1641201073171,
+                            "text": "constant"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgvx944jmi00",
+                                    "created": 1641201150691,
+                                    "text": "和view等价，是别名"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgvx86no8880",
+                            "created": 1641201077837,
+                            "text": "payable"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgvx99l9sgg0",
+                                    "created": 1641201162586,
+                                    "text": "如果某个方法要接收以太币时修饰函数"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cgvxazpovpk0",
+                    "created": 1641201297814,
+                    "text": "合约声明",
+                    "layout_right_offset": {
+                        "x": -4,
+                        "y": -514
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cgvxbgtrq0g0",
+                            "created": 1641201335066,
+                            "text": "contract"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cgvxawmrigw0",
+                    "created": 1641201291107,
+                    "text": "合约版本",
+                    "layout_right_offset": {
+                        "x": -12,
+                        "y": -683.999999992855
+                    },
+                    "layout_mind_offset": {
+                        "x": -57,
+                        "y": -131.99999999577994
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cgvxb4tvu4o0",
+                            "created": 1641201308951,
+                            "text": "pragma"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cgvxbm06pxc0",
+                    "created": 1641201346338,
+                    "text": "状态变量",
+                    "layout_mind_offset": {
+                        "x": 7,
+                        "y": 34
+                    },
+                    "layout_right_offset": {
+                        "x": 6,
+                        "y": -485
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cgvxbpl3hq80",
+                            "created": 1641201354132,
+                            "text": "uint"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cgvxbqx66kw0",
+                            "created": 1641201357039,
+                            "text": "address"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgw2kwtrl600",
+                                    "created": 1641216180721,
+                                    "text": "balance"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgw2liqbjog0",
+                                            "created": 1641216228402,
+                                            "text": "余额属性"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cgw2l1g67nk0",
+                                    "created": 1641216190783,
+                                    "text": "transfer"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgw2lnqgk000",
+                                            "created": 1641216239294,
+                                            "text": "调用者向某个地址转入以太币（单位：wei）"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cgw2l3vzzc80",
+                                    "created": 1641216196094,
+                                    "text": "send"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgw2m9bvo280",
+                                            "created": 1641216286302,
+                                            "text": "同transfer，但是转账失败时不会抛出异常并停止，send结果为false"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cgw2l6n6jns0",
+                                    "created": 1641216202091,
+                                    "text": "call, callcode, delegatecall"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgw2n0kquc80",
+                                            "created": 1641216345611,
+                                            "text": "不推荐用"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cgw2lgkpunk0",
+                                    "created": 1641216223710,
+                                    "text": "this"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgw2n39alo80",
+                                            "created": 1641216351449,
+                                            "text": "当前合约"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

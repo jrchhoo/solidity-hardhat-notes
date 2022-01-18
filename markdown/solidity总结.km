@@ -1,0 +1,1246 @@
+{
+    "root": {
+        "data": {
+            "id": "cgdct562c3s0",
+            "created": 1639315397715,
+            "text": "Solidity"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cgdcvav5mg00",
+                    "created": 1639315566844,
+                    "text": "源文件结构",
+                    "expandState": "expand",
+                    "layout_right_offset": {
+                        "x": 2.499999962747097,
+                        "y": 166.24999752268195
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cgdcte0vmmo0",
+                            "created": 1639315416992,
+                            "text": "版本",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgdctnal53s0",
+                                    "created": 1639315437170,
+                                    "text": "^0.4.0"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgdctul7cmw0",
+                                            "created": 1639315453050,
+                                            "text": ">=0.4.0 <=0.5.0"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgdctiegvxs0",
+                            "created": 1639315426521,
+                            "text": "引用其他源文件",
+                            "layout_right_offset": {
+                                "x": 5,
+                                "y": 4
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgdcumgajlk0",
+                                    "created": 1639315513703,
+                                    "text": "import \"filename\" as symbolName;"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgdcvvqts200",
+                            "created": 1639315612295,
+                            "text": "路径"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgdcw1d9r8g0",
+                                    "created": 1639315624536,
+                                    "text": "."
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cgdcw5wgbps0",
+                                    "created": 1639315634403,
+                                    "text": ".."
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgdcwcndjnk0",
+                            "created": 1639315649091,
+                            "text": "注释"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgdcwgjkfow0",
+                                    "created": 1639315657568,
+                                    "text": "//"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cgdcwi6tpfs0",
+                                    "created": 1639315661151,
+                                    "text": "/* */"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cgdcwzdipuw0",
+                    "created": 1639315698561,
+                    "text": "合约基础",
+                    "layout_right_offset": {
+                        "x": 295.4999999627471,
+                        "y": 174.24999752268195
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cgdcx20brhk0",
+                            "created": 1639315704294,
+                            "text": "状态变量"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgdcywqxe4o0",
+                                    "created": 1639315849570,
+                                    "text": "值类型"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgdcz7gp6w00",
+                                            "created": 1639315872896,
+                                            "text": "布尔"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgdczglxf880",
+                                                    "created": 1639315892803,
+                                                    "text": "bool"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdczjkl7d40",
+                                                            "created": 1639315899253,
+                                                            "text": "true"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdczl93lnc0",
+                                                            "created": 1639315902912,
+                                                            "text": "false"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cgdd0icbngo0",
+                                                    "created": 1639315974940,
+                                                    "text": "运算符"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdd0nuugww0",
+                                                            "created": 1639315986944,
+                                                            "text": "!    &&    ||    ==    !="
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgdczpxqsdc0",
+                                            "created": 1639315913109,
+                                            "text": "整型"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgdd1gy7c0o0",
+                                                    "created": 1639316050274,
+                                                    "text": "int（有符号）"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdd1ov7n1k0",
+                                                            "created": 1639316067507,
+                                                            "text": "int8 ~ int 256"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdd28t4sdc0",
+                                                            "created": 1639316110917,
+                                                            "text": "8位为步长递增，int是int256的别名"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdd6jmlumg0",
+                                                            "created": 1639316447924,
+                                                            "text": "-2^31到2^31次方，即-2147483648到2147483648"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cgdd1j62sc00",
+                                                    "created": 1639316055104,
+                                                    "text": "uint（无符号）"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdd1u2qrvk0",
+                                                            "created": 1639316078847,
+                                                            "text": "uint8 ~ uint256"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdd2ymgjtc0",
+                                                            "created": 1639316167110,
+                                                            "text": "8位为步长递增，int是uint256的别名"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdd6rc75ug0",
+                                                            "created": 1639316464709,
+                                                            "text": "0到2^32，即0到4294967295"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgdd4w93zc00",
+                                            "created": 1639316318678,
+                                            "text": "定长浮点型"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgdd55j4w340",
+                                                    "created": 1639316338875,
+                                                    "text": "暂未完全支持，可以申明，但不能赋值"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgdd7fh8f6g0",
+                                            "created": 1639316517256,
+                                            "text": "地址类型"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgdd7hif8kg0",
+                                                    "created": 1639316521682,
+                                                    "text": "address"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdd7jlsie80",
+                                                            "created": 1639316526239,
+                                                            "text": "存储20字节（以太坊地址大小）"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgdd832duts0",
+                                                            "created": 1639316568601,
+                                                            "text": "成员变量"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgdd85qeja80",
+                                                                    "created": 1639316574407,
+                                                                    "text": ".balance"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cgdd8d23u1s0",
+                                                                            "created": 1639316590352,
+                                                                            "text": "地址余额"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgdd87jescw0",
+                                                                    "created": 1639316578338,
+                                                                    "text": "transfer"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cgdd8hp9mm00",
+                                                                            "created": 1639316600460,
+                                                                            "text": "向一个地址发送以太币"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgdd9uo4rxc0",
+                                                                    "created": 1639316707053,
+                                                                    "text": "send"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cgdd9ylqucw0",
+                                                                            "created": 1639316715616,
+                                                                            "text": "transfer的低级版本，执行失败返回false，尽量不使用"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddcn13uco0",
+                                                                    "created": 1639316925516,
+                                                                    "text": "低级函数，谨慎使用",
+                                                                    "expandState": "expand"
+                                                                },
+                                                                "children": [
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cgddbftxs400",
+                                                                            "created": 1639316831481,
+                                                                            "text": "call"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "cgddd5vd08w0",
+                                                                                    "created": 1639316966528,
+                                                                                    "text": "执行完毕的返回值"
+                                                                                },
+                                                                                "children": []
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cgddbt55ogw0",
+                                                                            "created": 1639316860458,
+                                                                            "text": "callcode"
+                                                                        },
+                                                                        "children": [
+                                                                            {
+                                                                                "data": {
+                                                                                    "id": "cgddcwsw4080",
+                                                                                    "created": 1639316946787,
+                                                                                    "text": "未来会移除"
+                                                                                },
+                                                                                "children": []
+                                                                            }
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "data": {
+                                                                            "id": "cgddbv2l3o80",
+                                                                            "created": 1639316864656,
+                                                                            "text": "delegatecall"
+                                                                        },
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgdddtirl8o0",
+                                            "created": 1639317018009,
+                                            "text": "定长字节数组"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgdde0w0ms80",
+                                                    "created": 1639317034047,
+                                                    "text": "bytes1, bytes2, bytes3, ..., bytes32",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddeg2f2aw0",
+                                                            "created": 1639317067086,
+                                                            "text": "byte 是bytes1的别名"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddf6mk0400",
+                                                            "created": 1639317124900,
+                                                            "text": "索引访问"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddf98h43c0",
+                                                                    "created": 1639317130579,
+                                                                    "text": "如果x是bytesI类型，那么x[k] （0<=k<I） 返回第k个字节"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cgddf4xa0340",
+                                                    "created": 1639317121195,
+                                                    "text": "成员变量"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddgibhl3c0",
+                                                            "created": 1639317228717,
+                                                            "text": ".length"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgddj8ipacg0",
+                                            "created": 1639317442477,
+                                            "text": "地址字面常数（Address Literals）"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgddjj621t40",
+                                                    "created": 1639317465657,
+                                                    "text": "有理数和整数字面常数"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddm74m3tk0",
+                                                            "created": 1639317674541,
+                                                            "text": "1,2,3..."
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cgddjqtu2lc0",
+                                                    "created": 1639317482333,
+                                                    "text": "字符串字面常数"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddlv0b2740",
+                                                            "created": 1639317648159,
+                                                            "text": "“like this”"
+                                                        },
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cgddkf8tmsw0",
+                                                    "created": 1639317535482,
+                                                    "text": "十六进制字面常数"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddljhjfww0",
+                                                            "created": 1639317623080,
+                                                            "text": "hex开头"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddlnmx0zk0",
+                                                                    "created": 1639317632112,
+                                                                    "text": "hex\"001122FF\""
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgddmdpjico0",
+                                            "created": 1639317688867,
+                                            "text": "枚举类型"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgddmi34jhc0",
+                                                    "created": 1639317698396,
+                                                    "text": "enum"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cgdcyyykvaw0",
+                                    "created": 1639315854386,
+                                    "text": "引用类型",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgddpcjo9bc0",
+                                            "created": 1639317921428,
+                                            "text": "数组",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgddgss9kaw0",
+                                                    "created": 1639317251499,
+                                                    "text": "变长字节数组"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddgwrphgo0",
+                                                            "created": 1639317260172,
+                                                            "text": "bytes"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddtwakydc0",
+                                                                    "created": 1639318277871,
+                                                                    "text": "类似于byte[]"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddh2ki3n40",
+                                                            "created": 1639317272797,
+                                                            "text": "string"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddu8icyyg0",
+                                                                    "created": 1639318304463,
+                                                                    "text": "同bytes，但是不允许用长度或索引"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddutxo7f40",
+                                                            "created": 1639318351101,
+                                                            "text": "创建内存数组"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgdduy11ga00",
+                                                                    "created": 1639318360012,
+                                                                    "text": "new bytes(length)"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddv6hak3c0",
+                                                                    "created": 1639318378409,
+                                                                    "text": "new uint[](length)"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddvinpzhs0",
+                                                            "created": 1639318404919,
+                                                            "text": "成员"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddvm43amo0",
+                                                                    "created": 1639318412439,
+                                                                    "text": "length"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddvnt8u7s0",
+                                                                    "created": 1639318416138,
+                                                                    "text": "push"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgddpeeoc880",
+                                            "created": 1639317925480,
+                                            "text": "结构类型"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgddpzqpr140",
+                                            "created": 1639317971920,
+                                            "text": "注意事项"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgddq339fs00",
+                                                    "created": 1639317979209,
+                                                    "text": "数据位置"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddq6k12f40",
+                                                            "created": 1639317986753,
+                                                            "text": "memory"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddq8mpm200",
+                                                            "created": 1639317991269,
+                                                            "text": "storage"
+                                                        },
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddqoi0ye00",
+                                                            "created": 1639318025814,
+                                                            "text": " "
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddrj9hipk0",
+                                                                    "created": 1639318092778,
+                                                                    "text": "根据上下文不同，大多数时候数据有默认的位置",
+                                                                    "priority": 1
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddrj9i2z40",
+                                                                    "created": 1639318092779,
+                                                                    "text": "但也可以通过在类型名后增加关键字 storage 或 memory 进行修改",
+                                                                    "priority": 2
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddrj9ic4g0",
+                                                                    "created": 1639318092779,
+                                                                    "text": " 函数参数（包括返回的参数）的数据位置默认是 memory",
+                                                                    "priority": 3
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddrj9hw0g0",
+                                                                    "created": 1639318092779,
+                                                                    "text": "局部变量的数据位置默认是 storage",
+                                                                    "priority": 4
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddrj9i3u00",
+                                                                    "created": 1639318092779,
+                                                                    "text": "状态变量的数据位置强制是 storage",
+                                                                    "priority": 5
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "data": {
+                                                            "id": "cgddsbseuiw0",
+                                                            "created": 1639318154872,
+                                                            "text": "calldata"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgddsjs368g0",
+                                                                    "created": 1639318172267,
+                                                                    "text": "只读且不会永久存储，用以存储函数参数"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cgddwkhg0cw0",
+                                    "created": 1639318487257,
+                                    "text": "映射"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgddwn198vk0",
+                                            "created": 1639318492808,
+                                            "text": "mapping(_KeyType => _ValueType)"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgddwyxek6w0",
+                                                    "created": 1639318518697,
+                                                    "text": "_KeyType 可以是除了映射、变长数组、合约、枚举以及结构体以外的几乎所有类型"
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cgddx3582k80",
+                                                    "created": 1639318527877,
+                                                    "text": "_ValueType 可以是包括映射类型在内的任何类型"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgdcx72mzbs0",
+                            "created": 1639315715318,
+                            "text": "函数",
+                            "expandState": "expand",
+                            "layout_right_offset": {
+                                "x": 86,
+                                "y": 5
+                            }
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgddmsn694g0",
+                                    "created": 1639317721376,
+                                    "text": "function"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgddn04rkfk0",
+                                            "created": 1639317737677,
+                                            "text": "function (<parameter types>) {internal(默认)|external} [pure|constant|view|payable] [returns (<return types>)]"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde3ma9l5k0",
+                                            "created": 1639319039726,
+                                            "text": "view",
+                                            "expandState": "expand"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgde3q3yq000",
+                                                    "created": 1639319048052,
+                                                    "text": "保证不修改状态",
+                                                    "expandState": "expand"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgde4021of40",
+                                                            "created": 1639319069704,
+                                                            "text": "被认定修改状态的操作"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde4g9h9xs0",
+                                                                    "created": 1639319104981,
+                                                                    "text": "修改状态变量"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde4g9hl340",
+                                                                    "created": 1639319104982,
+                                                                    "text": "产生事件"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde4g9hinc0",
+                                                                    "created": 1639319104982,
+                                                                    "text": "创建其它合约"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde4g9hh3s0",
+                                                                    "created": 1639319104982,
+                                                                    "text": "使用 selfdestruct"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde4g9hp000",
+                                                                    "created": 1639319104982,
+                                                                    "text": "通过调用发送以太币"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde4g9htqo0",
+                                                                    "created": 1639319104982,
+                                                                    "text": "调用任何没有标记为 view 或者 pure 的函数"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde4g9hm5c0",
+                                                                    "created": 1639319104982,
+                                                                    "text": "使用低级调用"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde4g9hc4g0",
+                                                                    "created": 1639319104982,
+                                                                    "text": "使用包含特定操作码的内联汇编"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cgde4nx15340",
+                                                    "created": 1639319121643,
+                                                    "text": "constant是view的别名"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde55fpq7s0",
+                                            "created": 1639319159778,
+                                            "text": "pure"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgde58k7cgg0",
+                                                    "created": 1639319166580,
+                                                    "text": "保证不读取或修改状态"
+                                                },
+                                                "children": [
+                                                    {
+                                                        "data": {
+                                                            "id": "cgde5i1ccrs0",
+                                                            "created": 1639319187207,
+                                                            "text": "被认定读取状态的操作"
+                                                        },
+                                                        "children": [
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde5sli4f40",
+                                                                    "created": 1639319210194,
+                                                                    "text": "读取状态变量。"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde5slicwo0",
+                                                                    "created": 1639319210194,
+                                                                    "text": "访问 this.balance 或者 <address>.balance。"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde5slhzbk0",
+                                                                    "created": 1639319210194,
+                                                                    "text": "访问 block，tx， msg 中任意成员 （除 msg.sig 和 msg.data 之外）。"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde5slhzmg0",
+                                                                    "created": 1639319210194,
+                                                                    "text": "调用任何未标记为 pure 的函数。"
+                                                                },
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "data": {
+                                                                    "id": "cgde5slix080",
+                                                                    "created": 1639319210195,
+                                                                    "text": "使用包含某些操作码的内联汇编。"
+                                                                },
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde63jly280",
+                                            "created": 1639319234024,
+                                            "text": "fallback函数"
+                                        },
+                                        "children": [
+                                            {
+                                                "data": {
+                                                    "id": "cgde6923x6w0",
+                                                    "created": 1639319246027,
+                                                    "text": "未命名函数"
+                                                },
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgdcx8xwk5c0",
+                            "created": 1639315719385,
+                            "text": "函数修饰器",
+                            "layout_right_offset": {
+                                "x": 26.25000050291419,
+                                "y": -39.2499993853271
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cgdcxfpgoug0",
+                            "created": 1639315734112,
+                            "text": "事件",
+                            "layout_right_offset": {
+                                "x": 31.74999986961484,
+                                "y": 42.7499993480742
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cgdcxhf167s0",
+                            "created": 1639315737835,
+                            "text": "结构类型",
+                            "layout_right_offset": {
+                                "x": 26.500001080334187,
+                                "y": -91.99999850988388
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cgdcxjtd2q00",
+                            "created": 1639315743055,
+                            "text": "枚举",
+                            "layout_right_offset": {
+                                "x": 85,
+                                "y": -524.9999999999999
+                            }
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cgde8owuyog0",
+                            "created": 1639319437266,
+                            "text": "单位和全局变量",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgde8zuhylc0",
+                                    "created": 1639319461069,
+                                    "text": "以太币单位"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgde9bgr95s0",
+                                            "created": 1639319486358,
+                                            "text": "wei（默认）"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde9f0j5l40",
+                                            "created": 1639319494084,
+                                            "text": "finney"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde9hw6h9c0",
+                                            "created": 1639319500352,
+                                            "text": "szabo"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde9jhvpsw0",
+                                            "created": 1639319503841,
+                                            "text": "ether"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cgde9mtjrrs0",
+                                    "created": 1639319511077,
+                                    "text": "时间单位"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cgde9zldcoo0",
+                                            "created": 1639319538880,
+                                            "text": "1 == 1 seconds"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde9zldgt40",
+                                            "created": 1639319538880,
+                                            "text": "1 minutes == 60 seconds"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde9zldh7k0",
+                                            "created": 1639319538880,
+                                            "text": "1 hours == 60 minutes"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde9zld6uw0",
+                                            "created": 1639319538880,
+                                            "text": "1 days == 24 hours"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde9zldfm80",
+                                            "created": 1639319538880,
+                                            "text": "1 weeks == 7 days"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cgde9zle3c00",
+                                            "created": 1639319538881,
+                                            "text": "1 years == 365 days"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cgdeacepd7k0",
+                            "created": 1639319566775,
+                            "text": "特殊变量和函数（全局命名空间预设）"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cgdec7qx5pk0",
+                                    "created": 1639319713358,
+                                    "text": "https://solidity-cn.readthedocs.io/zh/develop/units-and-global-variables.html#id3"
+                                },
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cgdcvgcnuu00",
+                    "created": 1639315578787,
+                    "text": "topic",
+                    "layout_right_offset": {
+                        "x": 2.499999962747097,
+                        "y": 166.24999752268195
+                    }
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "right",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}

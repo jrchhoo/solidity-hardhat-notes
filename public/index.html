@@ -5,22 +5,29 @@
         <title>ETH WALLET</title>
 
         <!-- 引入bootstrap和jQuery -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+        ></script>
         <!-- <script type="text/javascript" src="jquery.min.js"></script> -->
 
-        <script type="text/javascript" src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css" />
+        <script
+            type="text/javascript"
+            src="bootstrap-4.4.1-dist/js/bootstrap.min.js"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="bootstrap-4.4.1-dist/css/bootstrap.min.css"
+        />
 
-        <style type="text/css">
-
-        </style>
+        <style type="text/css"></style>
     </head>
     <body>
         <div class="container" style="margin-top: 100px">
             <div class="row">
                 <div class="col-sm">
                     <input
-                        placeholder="password for add account "
+                        placeholder="password for add account and transfer"
                         id="account_pwd"
                         type="text"
                         class="form-control"
@@ -83,7 +90,6 @@
                         style="height: 30px; width: 400px"
                         required="required"
                     />
-                
                 </div>
                 <div class="col-sm">
                     <button
@@ -96,7 +102,6 @@
                     </button>
                 </div>
             </div>
-
         </div>
 
         <!-- 显示所有账户 -->
@@ -105,15 +110,12 @@
                 <div class="col">
                     <h4>Account Address</h4>
                 </div>
-                <div class="col" >
+                <div class="col">
                     <h4>Balance</h4>
                 </div>
             </div>
         </div>
-        <div class="container" id="accounts_list">
-        </div>
-
-        
+        <div class="container" id="accounts_list"></div>
 
         <script type="text/javascript">
             var balance = 0;
@@ -124,12 +126,10 @@
                     var rows = "";
                     for (var i = 0; i < accounts.length; i++) {
                         rows += `<div class="row">
-                                <div class="col">
-                                    ${accounts[i]}
-                                </div>
-                                <div class="col" id="${accounts[i]}" >
-                                    
-                                </div>
+                                    <div class="col">
+                                        ${accounts[i]}
+                                    </div>
+                                 <div class="col" id="${accounts[i]}" ></div>
                             </div>`;
                         getBalance(accounts[i]);
                     }
@@ -143,13 +143,6 @@
                     "http://localhost:8081/balance",
                     { account: account },
                     function (res) {
-                        console.log(
-                            "=======account=======" +
-                                account +
-                                "=======balance=======" +
-                                res
-                        );
-
                         $("#" + account).html(res);
                     }
                 );
@@ -158,9 +151,7 @@
             getAccounts();
 
             $("#addAcount").click(function () {
-                console.log("===add===");
                 var account_pwd = $("#account_pwd").val();
-                console.log("===account_pwd===" + account_pwd);
                 if (account_pwd != "") {
                     $.get(
                         "http://localhost:8081/add",
@@ -171,28 +162,39 @@
                     );
                     $("#account_pwd").val("");
                 } else {
-                    alert("Please enter the password")
-                }
+                    alert("Please enter the password");
+                }man
             });
 
             $("#transfer").click(function () {
-                console.log("===transfer===");
                 var account_from = $("#account_from").val();
                 var account_to = $("#account_to").val();
                 var transfer_amount = $("#transfer_amount").val();
-                
-                if (account_from != "" && account_to != "" && transfer_amount != "") {
-                    $.get("http://localhost:8081/transfer", 
-                        {from: account_from, to:account_to, amount: transfer_amount},
+                var pwd = $("#account_pwd").val();
+
+                if (
+                    account_from != "" &&
+                    account_to != "" &&
+                    transfer_amount != ""
+                ) {
+                    $.get(
+                        "http://localhost:8081/transfer",
+                        {
+                            from: account_from,
+                            to: account_to,
+                            amount: transfer_amount,
+                            pwd, pwd
+                        },
                         function (res) {
                             getAccounts();
+                            alert(res);
                         }
                     );
                     $("#account_from").val("");
                     $("#transfer_amount").val("");
                     $("#account_to").val("");
                 } else {
-                    alert("Please enter from and to account")
+                    alert("Please enter from and to account");
                 }
             });
         </script>

@@ -1,2 +1,29 @@
-# solidity-hardhat-demo
-solidity搭配hardhat学习demo
+# solidity-hardhat-notes
+### solidity搭配hardhat学习笔记
+
+1. [solidity hello world](./contracts/BasicKnowledge/01-helloworld.sol)
+2. [基本结构](./contracts/BasicKnowledge/02-基本结构.sol)
+3. [msg.sender](./contracts/BasicKnowledge/03-msgsender.sol)
+4. [面向对象](./contracts/BasicKnowledge/04-面向对象.sol)
+5. [访问权限](./contracts/BasicKnowledge/05-函数访问权限.sol)
+6. [状态权限](./contracts/BasicKnowledge/06-状态变量访问权限.sol)
+7. [pure && view && constant && payable](./contracts/BasicKnowledge/07-pureViewConstantPayable.sol)
+8. [Balance](./contracts/BasicKnowledge/08-balance.sol)
+9. [Transfer](./contracts/BasicKnowledge/09-transfer.sol)
+10. [This](./contracts/BasicKnowledge/10-this.sol)
+11. [Bytes定长](./contracts/BasicKnowledge/11-bytes定长数组.sol)
+12. [enum](./contracts/BasicKnowledge/12-enum.sol)
+13. [Memory && Storage](./contracts/BasicKnowledge/13-memoryStorage.sol)
+14. [string](./contracts/BasicKnowledge/14-动态大小字节数组：string.sol)
+15. [Bytes动态](./contracts/BasicKnowledge/15-动态大小字节数组：bytes.sol)
+16. [固定大小字节数组转换](./contracts/BasicKnowledge/16-固定大小字节数组转换.sol)
+17. [固定大小字节数组转换伟动态大小字节数组](./contracts/BasicKnowledge/17-固定大小字节数组转换为动态大小字节数组.sol)
+18. [动态大小字节数组与字符串转换](./contracts/BasicKnowledge/18-动态大小字节数组和字符串相互转换.sol)
+19. [固定大小字节数组与字符串转换](./contracts/BasicKnowledge/19-固定大小字节数组转换为字符串.sol)
+20. [定长数组](./contracts/BasicKnowledge/20-固定长度的数组.sol)
+21. [动态数组](./contracts/BasicKnowledge/21-动态长度数组.sol)
+22. [二维数组](./contracts/BasicKnowledge/22-二维数组.sol)
+23. [Mapping](./contracts/BasicKnowledge/23-mapping映射.sol)
+24. [ERC20](./contracts/BasicKnowledge/24-ERC20Demo.sol)
+25. [ERC721](./contracts/BasicKnowledge/25-ERC721Demo.sol)
+26. [Chainlink VRF](./contracts/BasicKnowledge/27-ChainlinkRandom.sol)
